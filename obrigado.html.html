@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solicitação recebida — Signal Company</title>
+<meta name="description" content="Sua solicitação foi recebida. Escolha o melhor horário para nossa reunião online.">
+<meta name="robots" content="noindex">
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5MPKCLNT');</script>
+<!-- End Google Tag Manager -->
+
+<style>
+:root{
+  --bg:#05070B; --navy:#07111F; --gold:#C8A45D; --gold-light:#DAB86B;
+  --blue:#1F6FFF; --text:#F7F8FB; --text-secondary:#A7B1C2; --border:rgba(199,164,93,.18);
+  --display:Georgia, 'Times New Roman', serif; --body:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+*{box-sizing:border-box; margin:0; padding:0}
+body{
+  background:var(--bg); color:var(--text); font-family:var(--body); min-height:100vh;
+  display:flex; align-items:center; justify-content:center; padding:24px; text-align:center;
+  background-image:radial-gradient(620px 420px at 50% 0%, rgba(31,111,255,.14), transparent 60%);
+}
+.box{max-width:560px}
+.check{
+  width:64px; height:64px; border-radius:50%; margin:0 auto 28px; display:flex; align-items:center; justify-content:center;
+  background:rgba(200,164,93,.1); border:1.5px solid var(--gold);
+}
+h1{font-family:var(--display); font-size:clamp(26px,4vw,34px); font-weight:600; margin-bottom:14px; line-height:1.2}
+p{color:var(--text-secondary); font-size:15.5px; line-height:1.7; max-width:440px; margin:0 auto 32px}
+.btn{
+  display:inline-flex; align-items:center; gap:10px; padding:16px 30px; border-radius:999px; font-weight:600; font-size:14.5px;
+  background:linear-gradient(135deg, var(--gold-light), var(--gold)); color:#0A0805;
+  box-shadow:0 14px 30px -12px rgba(200,164,93,.45);
+}
+.alt{display:block; margin-top:22px; font-size:13.5px; color:var(--text-secondary)}
+.alt a{color:var(--gold-light)}
+</style>
+</head>
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5MPKCLNT"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="box">
+  <div class="check">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#DAB86B" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+  </div>
+  <h1>Recebi sua solicitação. Agora escolha o melhor horário para nossa reunião online.</h1>
+  <p>A análise inicial já está em andamento. No horário marcado, vamos conversar sobre as oportunidades identificadas para sua empresa.</p>
+  <a href="https://calendar.app.google/fozbDFeReJYeiPK76" target="_blank" rel="noopener" class="btn" id="cta-agendar-reuniao">Agendar reunião no Google Calendar</a>
+  <span class="alt">Prefere falar antes? <a href="https://wa.me/5598981688538" target="_blank" rel="noopener" id="cta-whatsapp-obrigado">Fale pelo WhatsApp</a></span>
+</div>
+
+<script>
+if (window.dataLayer) {
+  window.dataLayer.push({ event: 'Contact' });
+}
+document.getElementById('cta-agendar-reuniao').addEventListener('click', () => {
+  if (window.dataLayer) window.dataLayer.push({ event: 'click_agendar_reuniao' });
+});
+document.getElementById('cta-whatsapp-obrigado').addEventListener('click', () => {
+  if (window.dataLayer) window.dataLayer.push({ event: 'clique_whatsapp' });
+});
+</script>
+</body>
+</html>
