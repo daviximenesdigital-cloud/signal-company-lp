@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<script src="https://mapa.davidigitalmarketing.com/track1click.js"></script>
+<script src="https://davidigitalmarketing.com.br/track1click.js"></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Signal Company — Tráfego pago para empresas locais | Davi Ximenes</title>
@@ -1155,13 +1155,6 @@ leadForm.addEventListener('submit', async (e) => {
       body: JSON.stringify(data)
     });
 
-    // ----------------------------------------------------------
-    // dataLayer push — evento "Lead" / "form_submit" para GTM.
-    // Não enviar dados pessoais (nome, e-mail, telefone) ao dataLayer.
-    // ----------------------------------------------------------
-    if (window.dataLayer) {
-      window.dataLayer.push({ event: 'form_submit', form_name: 'signal_commercial_contact', form_intent: 'commercial_conversation' });
-      window.dataLayer.push({ event: 'Lead', form_intent: 'commercial_conversation' });
     }
 
     if (res.ok) {
